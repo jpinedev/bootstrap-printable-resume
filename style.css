@@ -1,0 +1,67 @@
+/*
+Dark Blue: #2B4570
+Light Blue: #7180AC
+Off-white: #F4FAFF
+*/
+
+* {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin-bottom: 0 !important;
+}
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: 700 !important;
+}
+
+.colored h1, .colored h2, .colored h3, .colored h4, .colored h5, .colored h6, .colored b {
+  color: #7180AC;/*#2B4570;*/
+}
+
+.pl-3 {
+  padding-left: 1.5rem !important;
+}
+
+.colored .header {
+  background-color: #7180AC;
+  color: #F4FAFF;
+}
+.bw .header {
+  border-bottom: 1px solid black;
+}
+.header > div > * {
+  margin-bottom: 0;
+  color: inherit;
+}
+.header a, .header a:visited {
+  color: inherit;
+}
+.header a:hover {
+  color: #2B4570;
+}
+
+.colored .dark-blue {
+  color: #2B4570;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.project-list {
+  font-size: .85rem;
+}
+
+.colored ul {
+  list-style: none; /* Remove default bullets */
+}
+.colored ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2B4570; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
